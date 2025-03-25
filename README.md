@@ -95,7 +95,3 @@ To set up PowerBI integration:
 ## Screenshots
 
 [Include screenshots here when available]
-
-## License
-
-MIT License 
