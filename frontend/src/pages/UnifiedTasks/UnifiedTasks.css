@@ -1,0 +1,511 @@
+/* UnifiedTasks.css */
+
+.unified-tasks {
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-title {
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.task-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.view-toggle {
+  display: flex;
+}
+
+.view-toggle button {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-toggle button:first-child {
+  border-radius: 4px 0 0 4px;
+}
+
+.view-toggle button:last-child {
+  border-radius: 0 4px 4px 0;
+}
+
+.view-toggle button.active {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.task-filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sort-button {
+  padding: 10px 18px;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: #d5d5d5;
+}
+
+.add-task-section {
+  background-color: white;
+  padding: 22px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-input {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group.full-width {
+  width: 100%;
+}
+
+.input-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #444;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+}
+
+.input-with-icon input {
+  padding-left: 35px;
+}
+
+.add-task-button {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-start;
+  padding: 12px 24px;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #2980b9;
+}
+
+.add-task-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.task-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.loading, 
+.no-tasks {
+  text-align: center;
+  padding: 20px;
+  color: #777;
+}
+
+.task-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.task-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+}
+
+.task-priority {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.priority-high {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.priority-medium {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.priority-low {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.task-description {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.task-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.detail-item svg {
+  color: #6c757d;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-select {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.status-completed {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.status-in-progress {
+  background-color: #cce5ff;
+  color: #004085;
+  border-color: #b8daff;
+}
+
+.status-pending {
+  background-color: #f8f9fa;
+  color: #5a6268;
+  border-color: #ddd;
+}
+
+.delete-button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Kanban Board Styles */
+.kanban-board {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+
+.kanban-column {
+  flex: 1;
+  min-width: 250px;
+  max-width: calc(25% - 12px);
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.column-header {
+  padding: 10px;
+  margin: -15px -15px 15px -15px;
+  border-radius: 8px 8px 0 0;
+  color: white;
+  text-align: center;
+}
+
+.column-header.pending {
+  background-color: #5a6268;
+}
+
+.column-header.in-progress {
+  background-color: #007bff;
+}
+
+.column-header.completed {
+  background-color: #28a745;
+}
+
+.kanban-card {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.kanban-card h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.kanban-card p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.card-footer button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-footer button:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .kanban-column {
+    min-width: 220px;
+    max-width: calc(25% - 12px);
+  }
+}
+
+@media (max-width: 992px) {
+  .kanban-column {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .input-row {
+    flex-direction: column;
+  }
+  
+  .task-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .kanban-board {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .kanban-column {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Add status buttons styling */
+.status-buttons {
+  display: flex;
+  gap: 8px;
+  margin-right: 15px;
+}
+
+.status-btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: white;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+.status-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.status-btn.active {
+  color: white;
+  border-color: transparent;
+}
+
+.status-btn.pending {
+  color: #5a6268;
+}
+
+.status-btn.pending.active {
+  background-color: #5a6268;
+  color: white;
+}
+
+.status-btn.in-progress {
+  color: #004085;
+}
+
+.status-btn.in-progress.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.status-btn.completed {
+  color: #155724;
+}
+
+.status-btn.completed.active {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Status color classes */
+.status-missed {
+  background-color: #ff8c00;
+  color: white;
+  border-color: #e67e00;
+}
+
+.column-header.missed {
+  background-color: #ff8c00;
+}
+
+.status-text {
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Add styles for the card meta information */
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 0.85rem;
+  color: #555;
+  padding: 0 5px;
+}
+
+.card-facility, .card-assignee {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #f8f9fa;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.card-assignee {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+.card-facility {
+  background-color: #e8f5e9;
+  color: #1b5e20;
+}
+
+.card-meta svg {
+  font-size: 0.8rem;
+} 
