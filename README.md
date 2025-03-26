@@ -84,14 +84,6 @@ The system uses genetic algorithms to optimize task allocation based on:
 - User workload balance
 - User-task match
 
-## PowerBI Integration
-
-To set up PowerBI integration:
-1. In PowerBI Desktop, use "Get Data" > "Web API"
-2. Enter the endpoint URL: http://localhost:8000/api/analytics/powerbi-data
-3. Configure the authentication if needed
-4. Import the data and create visualizations
-
 ## Screenshots
 
 [Include screenshots here when available]
